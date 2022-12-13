@@ -21,19 +21,27 @@ export default function Home() {
                 <Popover className={styles.nav__item}>
                     <Popover.Button className={styles.nav__button}>Um okkur</Popover.Button>
                     <Transition
-                        enter={styles.panel__animate}
-                        enterFrom={styles.opacity0}
-                        enterTo={styles.opacity100}
-                        leave={styles.panel__animate}
-                        leaveFrom={styles.opacity100}
-                        leaveTo={styles.opacity0}
+                        enter={styles.panel__enter}
+                        enterFrom={styles.panel__enterfrom}
+                        enterTo={styles.panel__enterto}
+                        leave={styles.panel__leave}
+                        leaveFrom={styles.panel__leavefrom}
+                        leaveTo={styles.panel__leaveto}
                     >
                         <Popover.Panel className={styles.nav__panel}>
                             <div className={styles.nav__list}>
-                                <a href="/analytics">Analytics</a>
-                                <a href="/engagement">Engagement</a>
-                                <a href="/security">Security</a>
-                                <a href="/integrations">Integrations</a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 1
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 2
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 3
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 4
+                                </a>
                             </div>
                         </Popover.Panel>
                     </Transition>
@@ -41,25 +49,59 @@ export default function Home() {
 
                 <Popover className={styles.nav__item}>
                     <Popover.Button className={styles.nav__button}>Verkefni</Popover.Button>
-                    <Popover.Panel className={styles.nav__panel}>
-                        <div className={styles.nav__list}>
-                            <a href="/analytics">Analytics</a>
-                            <a href="/engagement">Engagement</a>
-                            <a href="/security">Security</a>
-                            <a href="/integrations">Integrations</a>
-                        </div>
-                    </Popover.Panel>
+                    <Transition
+                        enter={styles.panel__enter}
+                        enterFrom={styles.panel__enterfrom}
+                        enterTo={styles.panel__enterto}
+                        leave={styles.panel__leave}
+                        leaveFrom={styles.panel__leavefrom}
+                        leaveTo={styles.panel__leaveto}
+                    >
+                        <Popover.Panel className={styles.nav__panel}>
+                            <div className={styles.nav__list}>
+                                <a className={styles.nav__link} href="/">
+                                    Item 1
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 2
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 3
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 4
+                                </a>
+                            </div>
+                        </Popover.Panel>
+                    </Transition>
                 </Popover>
                 <Popover className={styles.nav__item}>
                     <Popover.Button className={styles.nav__button}>Þjónusta</Popover.Button>
-                    <Popover.Panel className={styles.nav__panel}>
-                        <div className={styles.nav__list}>
-                            <a href="/analytics">Analytics</a>
-                            <a href="/engagement">Engagement</a>
-                            <a href="/security">Security</a>
-                            <a href="/integrations">Integrations</a>
-                        </div>
-                    </Popover.Panel>
+                    <Transition
+                        enter={styles.panel__enter}
+                        enterFrom={styles.panel__enterfrom}
+                        enterTo={styles.panel__enterto}
+                        leave={styles.panel__leave}
+                        leaveFrom={styles.panel__leavefrom}
+                        leaveTo={styles.panel__leaveto}
+                    >
+                        <Popover.Panel className={styles.nav__panel}>
+                            <div className={styles.nav__list}>
+                                <a className={styles.nav__link} href="/">
+                                    Item 1
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 2
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 3
+                                </a>
+                                <a className={styles.nav__link} href="/">
+                                    Item 4
+                                </a>
+                            </div>
+                        </Popover.Panel>
+                    </Transition>
                 </Popover>
             </Popover.Group>
 

@@ -7,6 +7,7 @@
 :root {
     --darkblue: hsla(194, 25%, 27%, 1);
     --beige: hsla(39, 100%, 94%, 0.7);
+    --white: hsla(0, 0%, 100%, 0.8);
 }
 
 html {
@@ -24,11 +25,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
