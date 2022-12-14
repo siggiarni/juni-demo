@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Juni demo</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.png" />
             </Head>
 
             <header className={styles.header}>
