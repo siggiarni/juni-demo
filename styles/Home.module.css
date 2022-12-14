@@ -36,8 +36,12 @@
 .nav__button {
     appearance: none;
     min-width: var(--width);
+    min-height: 2.1875em;
     padding-block: 0.5em;
     padding-inline: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-family: inherit;
     font-size: 1em;

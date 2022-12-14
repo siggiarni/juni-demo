@@ -13,7 +13,7 @@ export default function Home() {
             </Head>
 
             <header className={styles.header}>
-                <Link href="/" class={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <Image src="/logo.svg" width={121} height={64} alt="Júni" className={styles.logo__symbol} />
                 </Link>
             </header>
